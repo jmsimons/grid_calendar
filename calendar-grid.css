@@ -1,0 +1,70 @@
+/* Body */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: whitesmoke;
+    color: #444;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    letter-spacing: 1.2vw;
+}
+
+
+/* Calendar */
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1em;
+    padding-bottom: 1px;
+    display: grid;
+    grid-template-rows: .2fr repeat(5, 1fr);
+    grid-gap: 1px;
+    background: #444;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1px;
+    text-align: center;
+    font-weight: bold;
+    background: whitesmoke;
+}
+
+.week {
+    padding: 0;
+    margin: 0 1px 0 1px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1px;
+    height: 15vh;
+}
+
+.day {
+    padding: 0 1px 0 1px;
+    grid-gap: 1px;
+    width: auto;
+    text-align: right;
+    background: whitesmoke;
+}
+
+p.holiday {
+    background: lightblue;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 1%;
+}
+
+p.event {
+    background: rgb(255, 255, 134);
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 1%;
+}
